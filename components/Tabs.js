@@ -16,7 +16,6 @@
 
 axios.get('https://lambda-times-backend.herokuapp.com/topics') 
     .then((res) => {
-        console.log(res.data.topics.length)
         res.data.topics.forEach((item) => {
             const tabAnchor = document.querySelector('.topics')
             const newTab = document.createElement('div')
